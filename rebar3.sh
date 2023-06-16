@@ -51,6 +51,6 @@ do
         $DOCKER run --rm \
                 -v "$PWD/$a":/src:rw,Z \
                 --workdir /src \
-                $NAME:$HASH "rebar3" "$REBAR_CMD"
+                $NAME:$HASH "rebar3" "$REBAR_CMD" "DEBUG=1"
     fi
 done
